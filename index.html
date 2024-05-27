@@ -1,66 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-            font-family: "Candara Light", Candara, "Segoe UI", Arial, sans-serif;
-        }
-
-        /* General container */
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-           .container {
-                padding: 10px;
-            }
-        }
-        
-        /* Title */
-        .title {
-            font-size: 24px; /* Adjust size as needed */
-            margin-bottom: 20px; /* Space between title and image */
-        }
-        
-        /* Image */
-        .image {
-            max-width: 100%; /* Ensure image fits within container */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Space between image and text */
-        }
-        
-        /* Text */
-        .text,
-        .more-text {
-            font-size: 16px; /* Adjust size as needed */
-            line-height: 1.5; /* Improve readability */
-            text-align: center; /* Centered text */
-            margin-bottom: 20px; /* Space between texts */
-        }
-
-        
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>The Thought Society</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Candara';
+            src: url('candara_light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Candara', 'Roboto', 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .banner {
+            background-color: #999;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #555;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 26px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .header-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 40px;
+        }
+
+        .meeting-dates {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 26px;
+            }
+
+            .meeting-dates {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
+<div class="banner">
+    <h1>The Thought Society</h1>
+	<h3>Our aim is to continue the noble pursuit of truth, <br>and to do so in the most pleasant of circumstances.</h3>
+	        <div class="divider"></div>
+<p style="max-width: 80vw; margin: 0 auto;">Calling all intellectuals, archeologists, cosmologists, neuroscientists, computer scientists, mathematicians, physicists, biologists, philosophers, polymaths, geologists, chemists, sociologists, psychologists, historians, ecologists, statisticians, linguists, artists, anthropologists, economists, innovators, researchers, experimentalists, theorists, astronauts, explorers, doctors, distillers, designers, poets, students, teachers, investigators, specialists, generalists, makers, engineers, architects, introverts, extroverts, nerds and weirdos!</p>
+
+
+	
+</div>
+
 <div class="container">
-    <br>
-    <br>
-    <h1 class="title">The Thought Society</h1>
-    <img src="test.png" alt="..." class="image">
-    <p class="text">Some introductory text here...</p>
-    <p class="more-text">And some more detailed text here...</p>
+	<br><br>
+    <img src="test.png" alt="Thought Society Image" class="header-image">
+    <div class="content">
+
+
+        <h2>We are a multidisciplinary community of inspired individuals who like to think deeply about stuff and want to share ideas with others. We also love great food. Monthly discussion meetings take place in small groups over dinner and drinks. New season starting June 2024 in Nijmegen.</h2>
+
+        <div class="divider"></div>
+
+        <h2><a href="asfd">Sign up here</a> for the newsletter or an upcoming meeting.</h2>
+        <p class="meeting-dates">Next discussion meetings:<br>June 19 + 23</p>
+
+        <div class="divider"></div>
+
+        <h2>Contact: info@thoughtsociety.org</h2>
+
+        <div class="divider"></div>
+
+        <h2>How we work:</h2>
+        <p>Each month you can opt-in to participate in a meeting of 6-8 people per group in the context of a home-cooked dinner. There is no membership fee, but you are expected to reimburse the host for groceries.</p>
+        <p>In each group three people take on crucial roles:</p>
+        <p><strong>Host:</strong> invites the group to their home and makes food (with contributions/reimbursements from group members)</p>
+        <p><strong>Moderator:</strong> defines and introduces a topic. After dinner, we discuss. Topics can be chosen democratically.</p>
+        <p><strong>Scribe:</strong> after the meeting writes a small abstract to summarize and communicate what we learned.</p>
+
+        <p>Some examples:</p>
+        <ul>
+            <li>“What is the future of work in the context of automation and AI?”</li>
+            <li>“How can we understand or even define consciousness?”</li>
+            <li>“What is the role of the individual in the fight against climate change?”</li>
+            <li>"How can the needs of wildlife and human civilization be balanced?"</li>
+            <li>"How do we define and measure progress in society?"</li>
+            <li>"How does language shape our perception of reality?"</li>
+            <li>"What are the implications of increasing human lifespan and potential immortality?"</li>
+        </ul>
+
+        <p>You can sign up for an upcoming meeting, or if you prefer just for the newsletter and we will let you know once per month so you can decide later. There are no obligations attached and your data will be used solely for the purpose of coordinating the meetings and not shared with anyone else.</p>
+    </div>
 </div>
 
 </body>
 </html>
+```
+
+This version maintains the use of the Candara Light font for all text, enlarges the font size for the next discussion meeting dates, and adds a full-width banner for the title at the top. The overall design remains simple and elegant, adhering to modern web design best practices.
