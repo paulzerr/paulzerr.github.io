@@ -29,34 +29,33 @@
             width: 100%;
         }
 
-
         .xxl {
-            font-size: 64px;
+            font-size: 5vw; /* Responsive font size */
             margin-bottom: 10px;
         }
 
         .xl {
-            font-size: 40px;
+            font-size: 3vw; /* Responsive font size */
             margin-top: 40px;
         }
 
         .l {
-            font-size: 36px;
+            font-size: 2.5vw; /* Responsive font size */
             margin-bottom: 40px;
         }
 
         .m {
-            font-size: 26px;
+            font-size: 2vw; /* Responsive font size */
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
         .s {
-            font-size: 20px;
+            font-size: 1.5vw; /* Responsive font size */
         }
 
         ul {
-            font-size: 26px;
+            font-size: 2vw; /* Responsive font size */
             list-style-type: disc;
             padding-left: 20px;
         }
@@ -80,10 +79,48 @@
         }
 
         .header-image {
-            max-width: 100vw;
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto 40px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                padding: 30px 0;
+            }
+
+            .xxl {
+                font-size: 8vw; /* Larger font size for smaller screens */
+            }
+
+            .xl {
+                font-size: 5vw; /* Larger font size for smaller screens */
+            }
+
+            .l {
+                font-size: 4vw; /* Larger font size for smaller screens */
+            }
+
+            .m {
+                font-size: 3.5vw; /* Larger font size for smaller screens */
+            }
+
+            .s {
+                font-size: 3vw; /* Larger font size for smaller screens */
+            }
+
+            ul {
+                font-size: 3.5vw; /* Larger font size for smaller screens */
+            }
+
+            ul li {
+                margin-bottom: 20px;
+            }
+
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -91,7 +128,7 @@
 
 <div class="banner">
     <p class="xxl" style="font-family: 'Palatino'; font-size: 90px">The Thought Society</p>
-    <p class="m" style="font-family: 'Palatino'; ">Our aim is to continue the noble pursuit of truth, <br>and to do so in the most pleasant of circumstances.</h3><br><br>
+    <p class="m" style="font-family: 'Palatino'; ">Our aim is to continue the noble pursuit of truth, <br>and to do so in the most pleasant of circumstances.</p><br><br>
     <div class="divider"></div>
     <br><br>
     <p class="m" style="max-width: 60%; margin: 0 auto;">Calling all
@@ -104,7 +141,7 @@
     explorers, doctors, distillers, designers, poets, students, teachers,
     investigators, specialists,
     generalists, makers, engineers, architects, introverts, extroverts,
-    nerds, [...], and weirdos!</h3>
+    nerds, [...], and weirdos!</p>
     <br><br>
 </div>
 
@@ -167,7 +204,7 @@
 
         <br><div class="divider"></div><br>
 
-        <p class="s">Good to know: The Thought Society is built on the proven concept of the Louis Bonaparte Society, which convened in Utrecht between 2012 and 2017.</b>
+        <p class="s">Good to know: The Thought Society is built on the proven concept of the Louis Bonaparte Society, which convened in Utrecht between 2012 and 2017.</p>
 
         <br><br><br><br><br><br>
 
